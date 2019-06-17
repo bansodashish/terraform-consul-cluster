@@ -4,13 +4,13 @@ This repo demonstrates how to create a Consul cluster running on AWS in 3 AZ zon
 ## Prerequisites
 
 Please install the following components:
-1 . Terraform (v0.12.1)
 
-1. Create a public key using ssh-keygen in the ubutnu machine and copy and pasted the public key in the git hub setting >new ssh key to have secure communication set between
-2. [Docker](https://askubuntu.com/questions/983351/how-to-install-terraform-in-ubuntu).
-3. Use the given Ubuntu 16 AMI(ami-07b4156579ea1d7ba) to to quick start the Consul server  
-4. You must also have an AWS account. 
-5. You will need to set up your AWS credentials. 
+1.Terraform (v0.12.1)
+2. Create a public key using ssh-keygen in the ubutnu machine and copy and pasted the public key in the git hub setting >new ssh key to have secure communication set between
+3. [Docker](https://askubuntu.com/questions/983351/how-to-install-terraform-in-ubuntu).
+4. Use the given Ubuntu 16 AMI(ami-07b4156579ea1d7ba) to to quick start the Consul server  
+5. You must also have an AWS account. 
+6 You will need to set up your AWS credentials. 
 
 ```
 $ aws configure
