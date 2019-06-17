@@ -28,6 +28,10 @@ variable "subnetaz2" {
   type = "map"
 }
 
+variable "subnetaz3" {
+  description = "The AZ for the second public subnet, e.g: us-east-1c"
+  type = "map"
+}
 variable "subnet_cidr1" {
   description = "The CIDR block for the first public subnet, e.g: 10.0.1.0/24"
 }
@@ -36,12 +40,16 @@ variable "subnet_cidr2" {
   description = "The CIDR block for the second public subnet, e.g: 10.0.2.0/24"
 }
 
+variable "subnet_cidr3" {
+  description = "The CIDR block for the second public subnet, e.g: 10.0.3.0/24"
+}
+
 variable "key_name" {
   description = "The name of the key to user for ssh access, e.g: consul-cluster"
 }
 
 variable "public_key_path" {
-  description = "The local public key path, e.g. ~/.ssh/id_rsa.pub"
+  description = "The local public key path"
 }
 
 variable "asgname" {
