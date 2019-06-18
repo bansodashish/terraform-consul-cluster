@@ -16,8 +16,8 @@ Please install the following components:
 $ aws configure
 AWS Access Key ID [None]: <Enter Access Key ID>
 AWS Secret Access Key [None]: <Enter Secret Key>
-Default region name [None]: ap-southeast-1
-Default output format [None]:
+you will get the option to put the Region 
+
 ```
 ## Creating the Cluster
 
@@ -26,15 +26,15 @@ The cluster is implemented as a [Terraform Module](https://www.terraform.io/docs
 ```bash
 # Initialize terraform first time using
 terraform init
-
-# Create the module.
-terraform get
+>> we will run the above command from the terraform -consul-clsuter dir it will initiating all the plugin and the Modules and all the .tf files
 
 # See what we will create, or do a dry run!
 terraform plan
 
-# Create the cluster!
+>> It will show what all resources that needs to be configured on the AWS.
+
 terraform apply
+>> Create the cluster along with all the resources in the AWS.
 ```
 
 You will be asked for a region to deploy in, use `us-east-1` should work fine! You can configure the nuances of how the cluster is created in the [`main.tf`](./main.tf) file. Once created, you will see a message like:
@@ -44,7 +44,7 @@ $ terraform apply
 var.region
   Region to deploy the Consul Cluster into
 
-  Enter a value: ap-southeast-1
+  Enter a value: us-east-1
 
 ...
 
